@@ -7,9 +7,9 @@
   <version>0.9</version>
   <packaging>pom</packaging>
 
-  <name>Protocol Buffers [BOM] - shaded version 3.11.1</name>
+  <name>Protocol Buffers [BOM] - shaded version 3.8.0</name>
   <description>A compatible set of open source libraries for working with protocol buffers.</description>
-  <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
+  <url>https://github.com/timelessRecall/XzProtobuf</url>
 
   <organization>
     <name>Google LLC</name>

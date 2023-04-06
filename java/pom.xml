@@ -7,14 +7,14 @@
 	<version>9</version>
   </parent>
 
-  <groupId>com.github.os72</groupId>
-  <artifactId>protobuf-parent-shaded-3-11-1</artifactId>
-  <version>0.9</version>
+  <groupId>com.wuba.XzProtobuf</groupId>
+  <artifactId>protobuf-parent-3-8-0</artifactId>
+  <version>3.8.0</version>
   <packaging>pom</packaging>
 
-  <name>Protocol Buffers [Parent] - shaded version 3.11.1</name>
+  <name>Protocol Buffers [Parent] - shaded version 3.8.0</name>
   <inceptionYear>2008</inceptionYear>
-  <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
+  <url>https://github.com/timelessRecall/XzProtobuf</url>
   <description>
     Protocol Buffers are a way of encoding structured data in an efficient yet
     extensible format.
@@ -30,8 +30,8 @@
       <timezone>America/Los_Angeles</timezone>
     </developer>
 	<developer>
-	  <id>os72</id>
-	  <name>Oliver Suciu</name>
+	  <id>timelessRecall</id>
+	  <name>gaolu</name>
 	</developer>
   </developers>
 
@@ -57,8 +57,8 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/os72/protobuf-java-shaded-3-11-1</url>
-	<connection>scm:git:git@github.com:os72/protobuf-java-shaded-3-11-1.git</connection>
+    <url>https://github.com/timelessRecall/XzProtobuf.git</url>
+	<connection>scm:git:git@github.com:timelessRecall/XzProtobuf.git</connection>
   </scm>
 
   <dependencyManagement>

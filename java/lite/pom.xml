@@ -10,7 +10,7 @@
   <artifactId>protobuf-javalite-3-8-0</artifactId>
   <packaging>jar</packaging>
 
-  <name>Protocol Buffers [Lite] - shaded version 3.11.1</name>
+  <name>Protocol Buffers [Lite] - shaded version 3.8.0</name>
   <description>
     Lite version of Protocol Buffers library. This version is optimized for code size, but does
     not guarantee API/ABI stability.

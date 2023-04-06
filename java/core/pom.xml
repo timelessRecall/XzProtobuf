@@ -10,7 +10,7 @@
   <artifactId>protobuf-java-3-8-0</artifactId>
   <packaging>jar</packaging>
 
-  <name>Protocol Buffers [Core] - shaded version 3.11.1</name>
+  <name>Protocol Buffers [Core] - shaded version 3.8.0</name>
   <description>
     Core Protocol Buffers library. Protocol Buffers are a way of encoding structured data in an
     efficient yet extensible format.
