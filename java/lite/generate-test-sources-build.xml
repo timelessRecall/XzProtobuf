@@ -1,0 +1,55 @@
+<project name="generate-test-sources">
+    <mkdir dir="${generated.testsources.dir}"/>
+    <exec executable="java">
+        <arg value="-jar" />
+        <arg value="${maven.dependency.com.github.os72.protoc-jar.jar.path}" />
+        <arg value="--java_out=lite:${generated.testsources.dir}"/>
+        <arg value="--proto_path=${protobuf.source.dir}"/>
+        <arg value="--proto_path=${protobuf.basedir}/java/core/${test.proto.dir}"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_import.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_import_lite.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_import_public.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_import_public_lite.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_lite.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_mset.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_mset_wire_format.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_no_generic_services.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_optimize_for.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_proto3.proto"/>
+        <arg value="${protobuf.source.dir}/google/protobuf/unittest_well_known_types.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/any_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/cached_field_size_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/deprecated_file.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/field_presence_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/lazy_fields_lite.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/lite_equals_and_hash.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/map_for_proto2_lite_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/map_for_proto2_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/map_initialization_order_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/map_lite_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/map_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/message_lite_extension_util_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/nested_builders_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/nested_extension.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/nested_extension_lite.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/non_nested_extension.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/non_nested_extension_lite.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/outer_class_name_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/outer_class_name_test2.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/outer_class_name_test3.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/packed_field_test.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/proto2_message.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/proto2_message_lite.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/proto2_unknown_enum_values.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/proto3_message.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/proto3_message_lite.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/test_bad_identifiers.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/test_check_utf8.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/test_check_utf8_size.proto"/>
+        <arg value="${protobuf.basedir}/java/core/${test.proto.dir}/com/wuba/XzProtobuf/wrappers_test.proto"/>
+    </exec>
+	<replace token="com.google.protobuf" value="com.wuba.XzProtobuf" dir="target/generated-test-sources">
+	  <include name="**/*.java" />
+	</replace>
+</project>
